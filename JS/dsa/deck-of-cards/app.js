@@ -1,16 +1,8 @@
-function makeDeck(){
-    const deck = [];
-}
-
-function drawCard(deck){
-    return deck.pop()
-}
-
 const myDeck = {
     deck: [],
     suits: ['hearts', 'diamonds', 'spades', 'clubs'],
-    values = '2,3,4,5,6,7,8,9,10,J,Q,K,A',
-    drawnCards = [],
+    values: '2,3,4,5,6,7,8,9,10,J,Q,K,A',
+    drawnCards: [],
 
     initiaizeDeck(){
         const {
@@ -37,7 +29,6 @@ const myDeck = {
         for(let i = 0; i < numCards; i++){
             cards.push(this.drawCard());
         }
-        this.drawnCards.push.apply(this.drawnCards, cards);
         return cards;
     },
     shuffle(){
