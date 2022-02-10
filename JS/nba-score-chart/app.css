@@ -2,5 +2,13 @@
     background-color: rgba(0, 255, 0, .3);
 }
 .loss {
+    
     background-color: rgba(255, 0, 0, .3);
+}
+section {
+    text-align: center;
+    justify-content: center;
+}
+ul {
+    list-style: none;
 }
