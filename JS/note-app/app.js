@@ -9,3 +9,7 @@ editBtn.addEventListener('click', () => {
     textarea.classList.toggle('hidden');
 })
 
+textarea.addEventListener('input', (e) => {
+    const { value } = e.target;
+    main.innerHTML = marked.parse(value);
+})
